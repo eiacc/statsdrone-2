@@ -48,6 +48,7 @@ Run the following command to start the development server:
 
 ### Mobile Testing (with Tunnel & QR Code)
 
+Pre-reqiusite: ***[ngrok]('https://ngrok.com/')*** setup.   
 For seamless mobile visual testing (also works for desktop preview):
 
 1. Start the local tunnel:
@@ -100,4 +101,4 @@ For seamless mobile visual testing (also works for desktop preview):
 | **/src/assets/scripts/animations.js**   | |
 | **/src/assets/scripts/canvas.js**       | |
 
-To learn more about bundle mapping. visit [here]('/config/bundle/map.ts')
+To learn more about bundle mapping. visit [here]('config/bundle/map.ts')
