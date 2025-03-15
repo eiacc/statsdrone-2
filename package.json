@@ -1,0 +1,26 @@
+{
+  "name": "static_lib",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun bundle && bun ./config/server/index.ts",
+    "bundle": "bun ./config/bundle/index.ts",
+    "tunnel": "bunx concurrently \"bun dev\" \"ngrok http 5432\"",
+    "qr": "bun ./config/qrcode/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/qrcode-terminal": "^0.12.2",
+    "concat-cli": "^4.0.0",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "onchange": "^7.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
