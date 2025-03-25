@@ -49,26 +49,44 @@ class Bundle {
    */
   async #optimize(extension: Extension, from: string, destination: string): Promise<void> {
     try {
-      const raw   : string[] = await readdir(from);
-      const files : string[] = raw.filter(file => file.endsWith(`.${extension}`)).map(file => path.join(from, file));
-      if (files.length === 0) {
-        console.warn(`No ${extension} files at ${from} to be optimized.`);
-        return
-      }
-
-      let compress = "";
-      for (const file of files) {
-        const temp: string = await readFile(file, 'utf-8');
-        compress += `${temp}\n`
-      }
+      // compress
+      const compressed = await this.compress(extension, from)
 
       // Minify with esbuild
-      const minified = await transform(compress, { loader: extension, minify: true });
+      const minified = await transform(compressed, { loader: extension, minify: true });
       await writeFile(destination, minified.code, "utf-8");
       console.log(`✅ ${extension.toUpperCase()} Minified & Combined into: ${destination}`);
     } catch (error) {
-      console.log('optimize method err: ', error)
+      console.log('optimize method bundling err: ', error)
     }
+  }
+
+  async compress(extension: Extension, from: string): Promise<string> {
+    let compress  : string    = '';
+    const stack   : string[]  = [from];
+
+    while(stack.length > 0) {
+      const folder = stack.pop()!;
+      try {
+        const entries = await readdir(folder, { withFileTypes: true });
+
+        for (const entry of entries) {
+          const fullPath = path.join(folder, entry.name);
+
+          if (entry.isDirectory()) {
+            stack.push(fullPath); // Push directory for further exploration
+          } else if (entry.isFile() && entry.name.endsWith(`.${extension}`)) {
+            console.log(entry.name)
+            const extractCode: string = await readFile(fullPath, 'utf-8');
+            compress += `${extractCode}\n`
+          }
+        }
+      } catch (error) {
+        console.log('compress method err: ', error)
+      }
+    }
+
+    return compress
   }
 
   // TODO: refactor
