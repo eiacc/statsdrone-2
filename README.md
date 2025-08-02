@@ -102,3 +102,13 @@ For seamless mobile visual testing (also works for desktop preview):
 | **/src/assets/scripts/canvas.js**       | |
 
 To learn more about bundle mapping. visit [here](config/bundle/map.ts)
+
+### Pages
+| Files                       | Url                   |
+| ----------------------------|-----------------------|
+| **index.html**              | **/**                 |
+| **/pages/test.html**        | **/pages/test.html**  |
+
+### TODOS
+- Configure HMR script
+- Routing

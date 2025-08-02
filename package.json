@@ -3,12 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun bundle && bun ./config/server/index.ts",
+    "dev": "bun tw && bun bundle && bun ./config/server/index.ts",
+    "tw": "bunx @tailwindcss/cli -i ./src/assets/styles/main.css -o ./src/assets/styles/tailwind.css",
     "bundle": "bun ./config/bundle/index.ts",
     "tunnel": "bunx concurrently \"bun dev\" \"ngrok http 5432\"",
     "qr": "bun ./config/qrcode/index.ts"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "@types/bun": "latest",
     "@types/qrcode-terminal": "^0.12.2",
     "concat-cli": "^4.0.0",
@@ -21,6 +23,8 @@
   },
   "dependencies": {
     "esbuild": "^0.25.1",
-    "qrcode-terminal": "^0.12.0"
+    "postcss": "^8.5.6",
+    "qrcode-terminal": "^0.12.0",
+    "tailwindcss": "^4.1.11"
   }
 }
