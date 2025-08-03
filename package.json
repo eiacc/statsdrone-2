@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun tw && bun bundle && bun ./config/server/index.ts",
+    "dev": "clear && bun tw && bun bundle && bun ./config/server/index.ts",
     "tw": "bunx @tailwindcss/cli -i ./src/assets/styles/main.css -o ./src/assets/styles/tailwind.css",
     "bundle": "bun ./config/bundle/index.ts",
     "tunnel": "bunx concurrently \"bun dev\" \"ngrok http 5432\"",

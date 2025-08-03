@@ -1,19 +1,9 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-size: 3rem;
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  min-height: 100dvh;
-  /* background-color: #000; */
-  text-align: center;
-  padding: 4rem 24px;
-}
-
-img {
-  width: 100%;
+.font-inter {
+  font-family: "Inter", sans-serif;
 }

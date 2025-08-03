@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Test</title>
+  <link href="../styles.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+  <body class="font-montserrat text-gray-800">
+    <div class="grid gap-10 md:gap-6 lg:gap-20 pb-20">
+      <!-- Header -->
+      <header class="w-full p-4 md:p-6 xl:p-12">
+        <div class="max-w-screen-lg mx-auto grid place-items-center md:place-items-start">
+          <a href="#"><img src="../pub/images/logo-dark.svg" alt=""></a>
+        </div>
+      </header>
+
+      <!-- Responsive Layout -->
+      <div class="px-6 lg:px-12 grid grid-cols-1 md:grid-cols-[1fr_320px] xl:grid-cols-[auto_1fr_auto] gap-12">
+        <!-- Left Sidebar -->
+        <aside class="hidden max-w-xs shrink-0 order-1 xl:block lg:order-none">
+          <div class="flex items-center gap-4 pb-6 pl-3">
+            <p class="font-bold text-lg flex-1">Article contents</p>
+            <span class="grid">
+              <!-- SVG unchanged -->
+            </span>
+          </div>
+          <nav class="space-y-5 text-sm text-gray-700">
+            <p class="cursor-pointer pl-4 font-light">Article overview</p>
+            <p class="cursor-pointer pl-4 font-light">This is why we can’t have nice things</p>
+            <p class="cursor-pointer pl-4 font-light border-l-2 border-orange-500 pl-3">
+              Why do we have to have this complex menu and what can we do about it?
+            </p>
+            <p class="cursor-pointer pl-4 font-light">5 reasons not to exit</p>
+            <p class="cursor-pointer pl-4 font-light">Something random</p>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="order-1 md:order-none lg:col-span-1 flex-1 space-y-8">
+          <div class="space-y-3">
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-xs uppercase font-bold">
+              <a href="/">Blog</a>
+              <span class="pb-1 leading-none">&gt;</span>
+              <a href="/">Affiliate BI Podcast</a>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+              Leadership in iGaming with Richard Dennys of Game Lounge
+            </h1>
+
+            <!-- Author Info -->
+            <div class="grid gap-2">
+              <div class="flex items-center gap-2 text-sm">
+                <img src="../pub/images/author-john-wright.png" alt="author" class="w-9 h-9 rounded-md object-cover" />
+                <p class="font-bold">John Wright</p>
+              </div>
+              <span class="text-gray-600">• Oct 27, 2024 • 8 min</span>
+            </div>
+          </div>
+
+          <!-- Article -->
+          <article class="space-y-5 text-[1.125rem] font-inter">
+            <div class="grid place-items-center">
+              <img src="../pub/images/blog-image.png" alt="blog-image" class="w-full object-contain" />
+            </div>
+
+            <p>What was the first question I asked <b>Richard Dennys?</b></p>
+            <p>
+              He’s the <a href="/" class="text-blue-600 underline underline-offset-4">CEO of Game Lounge</a>...
+            </p>
+            <p>I think he is a <b>great leader</b>...</p>
+            <p>
+              Or maybe both? <a href="/" class="text-blue-600 underline underline-offset-4">Underlined link</a>
+            </p>
+
+            <h2 class="text-2xl font-semibold leading-snug">This is H2 heading SEO optimized</h2>
+            <h3 class="text-xl font-semibold leading-snug">This is H3 heading SEO optimized</h3>
+            <h4 class="text-lg font-semibold leading-snug">This is H4 heading SEO optimized</h4>
+
+            <blockquote class="border-l-4 border-indigo-800 pl-6 italic text-xl font-medium text-gray-800 bg-gray-50 py-4">
+              “This is a quote block of text where we quote the quote...”
+            </blockquote>
+
+            <p>Numbered or bullet lists?</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>this is bullet list 1</li>
+              <li>bullet item 2</li>
+              <li>and number 3</li>
+            </ul>
+
+            <p>also numbered list</p>
+            <ol class="list-decimal pl-6 space-y-1">
+              <li>this item</li>
+              <li>a 2nd item</li>
+              <li>third item</li>
+            </ol>
+          </article>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="flex flex-col gap-6 xl:max-w-xs space-y-4 md:space-y-4 lg:space-y-0 order-3 lg:order-none pt-8 lg:pt-0">
+          <div class="block xl:hidden">
+            <div class="flex items-center gap-4 pb-6 pl-3">
+              <p class="font-bold text-lg flex-1">Article contents</p>
+              <span class="grid">
+                <!-- SVG unchanged -->
+              </span>
+            </div>
+            <nav class="space-y-5 text-sm text-gray-700">
+              <p class="cursor-pointer pl-4 font-light">Article overview</p>
+              <p class="cursor-pointer pl-4 font-light">This is why we can’t have nice things</p>
+              <p class="cursor-pointer pl-4 font-light border-l-2 border-orange-500 pl-3">
+                Why do we have to have this complex menu and what can we do about it?
+              </p>
+              <p class="cursor-pointer pl-4 font-light">5 reasons not to exit</p>
+              <p class="cursor-pointer pl-4 font-light">Something random</p>
+            </nav>
+          </div>
+
+          <div>
+            <!-- Search -->
+            <form class="mb-10">
+              <div class="flex items-center bg-gray-100 rounded-full px-8 py-4">
+                <input type="search" placeholder="Search here" class="bg-transparent text-sm italic w-full placeholder-underline focus:outline-none" />
+                <button type="submit" class="font-bold underline underline-offset-4 text-sm">GO</button>
+              </div>
+            </form>
+    
+            <!-- Authors -->
+            <section class="mb-10">
+              <h2 class="relative font-bold text-xl pb-2 w-fit after:absolute after:bottom-0 after:left-0 after:w-[calc(100%-20px)] after:h-1 after:bg-indigo-900">Authors</h2>
+              <div class="max-h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-[#837ee8] scrollbar-track-[#f4f4f4] space-y-6 mt-6">
+                <div class="flex gap-4 items-center">
+                  <img src="../pub/images/author-john-wright.png" alt="author" class="w-14 h-14 rounded-md object-cover" />
+                  <div>
+                    <p class="font-bold">John Wright</p>
+                    <p class="text-sm text-gray-600">Affiliate BI host</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+    
+            <!-- Categories -->
+            <section>
+              <h2 class="relative font-bold text-xl pb-2 w-fit after:absolute after:bottom-0 after:left-0 after:w-[calc(100%-20px)] after:h-1 after:bg-indigo-900">Categories</h2>
+              <div class="mt-6 space-y-4 text-sm uppercase font-semibold">
+                <p>Affiliate Podcast</p>
+                <p>Business Intelligence</p>
+                <p>Another Keyword</p>
+              </div>
+            </section>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

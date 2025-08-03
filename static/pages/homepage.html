@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statsdrone Homepage</title>
+    <link href="../styles.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-montserrat text-gray-800">
+    <div class="grid gap-10 md:gap-6 xl:gap-20">
+      <!-- Header -->
+      <header class="fixed top-0 left-0 w-full">
+        <div class="flex items-center justify-between gap-4 py-3 px-4 xl:p-0">
+          <a href="#" class="w-36 xl:hidden"><img src="../pub/images/logo-1.svg" alt=""></a>
+          
+          <input type="checkbox" name="menu" id="menu" class="peer hidden" hidden>
+          <label for="menu" class="w-4 text-white xl:hidden">
+            <svg focusable="false" aria-hidden="true" class="w-full h-full" fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 95.95" style="enable-background:new 0 0 122.88 95.95" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M8.94,0h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,17.88,0,13.86,0,8.94l0,0 C0,4.02,4.02,0,8.94,0L8.94,0z M8.94,78.07h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105 C4.02,95.95,0,91.93,0,87.01l0,0C0,82.09,4.02,78.07,8.94,78.07L8.94,78.07z M8.94,39.03h105c4.92,0,8.94,4.02,8.94,8.94l0,0 c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,56.91,0,52.89,0,47.97l0,0C0,43.06,4.02,39.03,8.94,39.03L8.94,39.03z"/></g></svg>
+          </label>
+
+          <div class="hidden fixed top-0 left-0 w-full h-full bg-black peer-checked:block xl:bg-transparent xl:relative xl:flex w-full items-center justify-between gap-4 py-8 px-4 xl:px-20 text-white">
+            <div class="mb-8 xl:mb-0">
+              <ul class="flex items-center justify-between">
+                <li>
+                  <a href="#"><img src="../pub/images/logo-1.svg" alt=""></a>
+                </li>
+                <li>
+                  <label for="menu" class="text-white xl:hidden">
+                    <svg version="1.1" id="Layer_1" focusable="false" aria-hidden="true" class="w-4 h-4 aspect-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.878px" height="122.88px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-8 xl:mb-0">
+              <ul class="flex flex-col xl:flex-row gap-4">
+                <li>
+                  <a href="#" class="flex items-center text-white hover:text-orange-500">
+                    <span>Integrations</span>
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_231_544)">
+                        <path d="M6.17917 6.84167L10 10.6625L13.8208 6.84167L15 8.02084L10 13.0208L5 8.02084L6.17917 6.84167Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_231_544">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center text-white hover:text-orange-500">
+                    <span>Platform</span>
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_231_544)">
+                        <path d="M6.17917 6.84167L10 10.6625L13.8208 6.84167L15 8.02084L10 13.0208L5 8.02084L6.17917 6.84167Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_231_544">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center text-white hover:text-orange-500">
+                    <span>For Affiliates
+                    </span>
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_231_544)">
+                        <path d="M6.17917 6.84167L10 10.6625L13.8208 6.84167L15 8.02084L10 13.0208L5 8.02084L6.17917 6.84167Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_231_544">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center text-white hover:text-orange-500">
+                    <span>Resources</span>
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_231_544)">
+                        <path d="M6.17917 6.84167L10 10.6625L13.8208 6.84167L15 8.02084L10 13.0208L5 8.02084L6.17917 6.84167Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_231_544">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                  </a>
+                </li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="mb-8 xl:mb-0">
+              <ul class="flex flex-col xl:flex-row gap-4">
+                <li class="pr-2"><a href="#">Login</a></li>
+                <li><a href="#" class="font-montserrat border border-[2px] border-white py-2.5 px-4 rounded-md">Book a demo</a></li>
+                <li><a href="#" class="font-montserrat bg-[linear-gradient(90deg,_#f56612_0%,_#f38443_100%)] text-white px-6 py-3 rounded-md">Get Started</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- hero -->
+        <section class="min-h-screen bg-[radial-gradient(circle,_#402689_0%,_#21176d_100%)] pt-24 xl:pt-36 pb-10 px-4">
+                      <div class="max-w-6xl mx-auto text-center">
+                          <div class="flex flex-col xl:flex-row gap-2 xl:gap-0 items-center justify-center pb-6">
+                <img class="h-6 xl:mr-5" src="../pub/images/trustpilot-star-rating.png" alt="" class="pl-2">
+                <p class="text-white text-xs xl:text-base">Rated <strong>Excellent</strong> by 10+ customers on</p>
+                <img class="h-6 xl:ml-3" src="../pub/images/trustpilot-logo.png" alt="" class="pr-5">
+            </div>
+
+            <h1 class="text-white text-center text-2xl xl:text-4xl font-bold">
+              The <span class="text-[#FFBB6E]">Affiliate CRM</span> That Turns <span class="text-[#FFB0B0] underline">Revenue Leak</span> into Growth Opportunities
+            </h1>
+
+            <div class="pt-10 xl:pt-20 pb-8 grid gap-3 place-items-center">
+              <a href="#" class="bg-[linear-gradient(90deg,_#f56612_0%,_#f38443_100%)] text-white px-6 py-3 rounded-md flex items-center justify-between gap-5 text-xs xl:text-base">
+                <span>Get started now</span>
+                <span>
+                  <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0001 1.00002C19.9063 1.09298 19.8319 1.20359 19.7812 1.32545C19.7304 1.4473 19.7043 1.57801 19.7043 1.71002C19.7043 1.84203 19.7304 1.97274 19.7812 2.0946C19.8319 2.21646 19.9063 2.32706 20.0001 2.42002L24.6001 7.02002H1.06006C0.794842 7.02002 0.540488 7.12538 0.352952 7.31291C0.165415 7.50045 0.0600586 7.75481 0.0600586 8.02002C0.0600586 8.28524 0.165415 8.53959 0.352952 8.72713C0.540488 8.91466 0.794842 9.02002 1.06006 9.02002H24.5801L20.0001 13.59C19.8138 13.7774 19.7093 14.0308 19.7093 14.295C19.7093 14.5592 19.8138 14.8127 20.0001 15C20.1874 15.1863 20.4409 15.2908 20.7051 15.2908C20.9692 15.2908 21.2227 15.1863 21.4101 15L27.7701 8.64002C27.8557 8.55789 27.9238 8.4593 27.9703 8.35018C28.0168 8.24106 28.0408 8.12365 28.0408 8.00502C28.0408 7.88639 28.0168 7.76899 27.9703 7.65986C27.9238 7.55074 27.8557 7.45215 27.7701 7.37002L21.4201 1.00002C21.3271 0.906294 21.2165 0.831899 21.0946 0.781131C20.9728 0.730362 20.8421 0.704224 20.7101 0.704224C20.578 0.704224 20.4473 0.730362 20.3255 0.781131C20.2036 0.831899 20.093 0.906294 20.0001 1.00002Z" fill="white"/>
+                  </svg>                    
+                </span>
+              </a>
+              <span class="text-[#DCDCDC] text-xs xl:text-base">No credit card needed</span>
+            </div>
+
+            <div>
+              <img src="../pub/images/hero-image.png" alt="">
+            </div>
+          </div>
+        </section>
+        
+        <!-- Logos -->
+        <section class="py-3 px-4 xl:py-8 xl:px-20">
+          <div class="flex flex-wrap justify-center place-items-center gap-4 xl:grid xl:gap-20 xl:grid-cols-7">
+            <img class="h-6 xl:h-auto" src="../pub/images/brand-7.png" alt="">
+            <img class="h-18 xl:h-auto" src="../pub/images/brand-6.png" alt="">
+            <img class="h-13 xl:h-auto" src="../pub/images/brand-5.png" alt="">
+            <img class="h-6 xl:h-auto" src="../pub/images/brand-4.png" alt="">
+            <img class="h-13 xl:h-auto" src="../pub/images/brand-3.png" alt="">
+            <img class="h-6 xl:h-auto" src="../pub/images/brand-2.png" alt="">
+            <img class="h-6 xl:h-auto" src="../pub/images/brand-1.png" alt="">
+          </div>
+        </section>
+
+        <!-- rich text -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-8 xl:mb-10">The Best Affiliate Stats Aggregator</h2>
+            <div>
+              <p class="font-inter text-sm xl:text-base">StatsDrone is an <strong>affiliate stats data aggregator</strong> that collects your affiliate stats and revenue data. The app services <u>iGaming affiliate programs</u>, affiliate networks and soon other affiliate niches.</p>
+              <br>
+              <p class="font-inter text-sm xl:text-base">We have support for over 1550 iGaming affiliate programs. If you want any program added, just ask!</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 cols-grid -->
+        <section class="pt-8 pb-16 px-4 xl:px-20">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 xl:gap-10">
+              <div class="pt-5 xl:pb-6 xl:pt-12 xl:px-10 xl:pb-14 rounded-md border border-[#F1F1F1]">
+                <div class="flex flex-col xl:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+                  <div class="flex items-center drop-shadow-md py-3 xl:pl-4 xl:pr-8 rounded-full">
+                    <span class="mr-5">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 29.375V12.5C3.75 11.1194 4.86937 10 6.25 10V7.5C6.25 6.81 6.81 6.25 7.5 6.25H8.75V1.25C8.75 0.905 9.02938 0.625 9.375 0.625C9.72062 0.625 10 0.905 10 1.25V6.25H11.25C11.94 6.25 12.5 6.81 12.5 7.5V10C13.8806 10 15 11.1194 15 12.5V17.5H19.375V13.75H21.875V11.875H25.625V13.75H26.25V29.375H3.75ZM11.25 8.125C11.25 7.78 10.9706 7.5 10.625 7.5H8.125C7.77938 7.5 7.5 7.78 7.5 8.125V10H11.25V8.125ZM13.75 12.5C13.75 11.81 13.19 11.25 12.5 11.25H6.25C5.56 11.25 5 11.81 5 12.5V28.125H13.75V12.5ZM19.375 18.75H15V28.125H19.375V18.75ZM25 15H20.625V28.125H25V15ZM22.5 16.875H23.125C23.4706 16.875 23.75 17.1544 23.75 17.5V18.125C23.75 18.4706 23.4706 18.75 23.125 18.75H22.5C22.1544 18.75 21.875 18.4706 21.875 18.125V17.5C21.875 17.1544 22.1544 16.875 22.5 16.875ZM22.5 20.625H23.125C23.4706 20.625 23.75 20.9044 23.75 21.25V21.875C23.75 22.2206 23.4706 22.5 23.125 22.5H22.5C22.1544 22.5 21.875 22.2206 21.875 21.875V21.25C21.875 20.9044 22.1544 20.625 22.5 20.625ZM22.5 24.375H23.125C23.4706 24.375 23.75 24.6544 23.75 25V25.625C23.75 25.9706 23.4706 26.25 23.125 26.25H22.5C22.1544 26.25 21.875 25.9706 21.875 25.625V25C21.875 24.6544 22.1544 24.375 22.5 24.375ZM16.875 20.625H17.5C17.8456 20.625 18.125 20.9044 18.125 21.25V21.875C18.125 22.2206 17.8456 22.5 17.5 22.5H16.875C16.5294 22.5 16.25 22.2206 16.25 21.875V21.25C16.25 20.9044 16.5294 20.625 16.875 20.625ZM16.875 24.375H17.5C17.8456 24.375 18.125 24.6544 18.125 25V25.625C18.125 25.9706 17.8456 26.25 17.5 26.25H16.875C16.5294 26.25 16.25 25.9706 16.25 25.625V25C16.25 24.6544 16.5294 24.375 16.875 24.375ZM11.25 26.25H10.625C10.2794 26.25 10 25.9706 10 25.625V25C10 24.655 10.2794 24.375 10.625 24.375H11.25C11.5956 24.375 11.875 24.655 11.875 25V25.625C11.875 25.9706 11.5956 26.25 11.25 26.25ZM11.25 22.5H10.625C10.2794 22.5 10 22.2206 10 21.875V21.25C10 20.905 10.2794 20.625 10.625 20.625H11.25C11.5956 20.625 11.875 20.905 11.875 21.25V21.875C11.875 22.2206 11.5956 22.5 11.25 22.5ZM11.25 18.75H10.625C10.2794 18.75 10 18.4706 10 18.125V17.5C10 17.155 10.2794 16.875 10.625 16.875H11.25C11.5956 16.875 11.875 17.155 11.875 17.5V18.125C11.875 18.4706 11.5956 18.75 11.25 18.75ZM11.25 15H10.625C10.2794 15 10 14.7206 10 14.375V13.75C10 13.405 10.2794 13.125 10.625 13.125H11.25C11.5956 13.125 11.875 13.405 11.875 13.75V14.375C11.875 14.7206 11.5956 15 11.25 15ZM8.125 26.25H7.5C7.15438 26.25 6.875 25.9706 6.875 25.625V25C6.875 24.6544 7.15438 24.375 7.5 24.375H8.125C8.47062 24.375 8.75 24.6544 8.75 25V25.625C8.75 25.9706 8.47062 26.25 8.125 26.25ZM8.125 22.5H7.5C7.15438 22.5 6.875 22.2206 6.875 21.875V21.25C6.875 20.9044 7.15438 20.625 7.5 20.625H8.125C8.47062 20.625 8.75 20.9044 8.75 21.25V21.875C8.75 22.2206 8.47062 22.5 8.125 22.5ZM8.125 18.75H7.5C7.15438 18.75 6.875 18.4706 6.875 18.125V17.5C6.875 17.155 7.15438 16.875 7.5 16.875H8.125C8.47062 16.875 8.75 17.155 8.75 17.5V18.125C8.75 18.4706 8.47062 18.75 8.125 18.75ZM8.125 15H7.5C7.15438 15 6.875 14.7206 6.875 14.375V13.75C6.875 13.405 7.15438 13.125 7.5 13.125H8.125C8.47062 13.125 8.75 13.405 8.75 13.75V14.375C8.75 14.7206 8.47062 15 8.125 15Z" fill="black"/>
+                      </svg>                    
+                    </span>
+                    <p class="font-inter font-bold text-base xl:text-2xl pt-1">AGENCIES & AFFILIATES</p>
+                  </div>
+                  <a href="#" class="text-blue-300 text-xs xl:text-sm">read more</a>
+                </div>
+  
+                <p class="font-inter text-sm xl:text-base text-[#3E3E3E]">For individual affiliates with 1 or more sites including agencies managing commercial deals. </p>
+              </div>
+              <div class="pt-5 xl:pb-6 xl:pt-12 xl:px-10 xl:pb-14 rounded-md border border-[#F1F1F1]">
+                <div class="flex flex-col xl:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+                  <div class="flex items-center drop-shadow-md py-3 xl:pl-4 xl:pr-8 rounded-full">
+                    <span class="mr-5">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6.625C26.25 6.625 28.125 8.5 28.125 10.75C28.125 13 26.25 14.875 24 14.875C21.75 14.875 19.875 13 19.875 10.75C19.875 8.5 21.75 6.625 24 6.625ZM14 8.375C16 8.375 17.75 10 17.75 12C17.75 14 16.125 15.625 14 15.625C12 15.625 10.375 14 10.375 12C10.375 10 12 8.375 14 8.375ZM1.75 13.25C1.75 11.5 3.25 10 5 10C6.75 10 8.25 11.375 8.25 13.125C8.25 14.875 6.75 16.25 5 16.25C3.25 16.25 1.75 15 1.75 13.25ZM1.375 22.125C1.375 20.375 2.875 18.375 5 18.375C7.125 18.375 8.625 20.25 8.625 22.125V23.375H1.375V22.125ZM9.875 22.125V21.875C9.875 19.875 11.5 17.75 14 17.75C16.5 17.75 18.125 19.875 18.125 21.875V23.25H9.875V22.125ZM28.625 23.375H19.375V22V21.75C19.375 19.5 21.25 17 24 17C26.75 17 28.625 19.375 28.625 21.75V23.375Z" fill="black"/>
+                      </svg>                                         
+                    </span>
+                    <p class="font-inter font-bold text-base xl:text-2xl pt-1">AFFILIATE NETWORKS</p>
+                  </div>
+                  <a href="#" class="text-blue-300 text-xs xl:text-sm">read more</a>
+                </div>
+  
+                <p class="font-inter text-sm xl:text-base text-[#3E3E3E]">See why more affiliate networks are getting their sub-affiliation powered by StatsDrone.</p>
+              </div>
+              <div class="pt-5 xl:pb-6 xl:pt-12 xl:px-10 xl:pb-14 rounded-md border border-[#F1F1F1]">
+                <div class="flex flex-col xl:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+                  <div class="flex items-center drop-shadow-md py-3 xl:pl-4 xl:pr-8 rounded-full">
+                    <span class="mr-5">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                                        
+                    </span>
+                    <p class="font-inter font-bold text-base xl:text-2xl pt-1">SEO AFFILIATES</p>
+                  </div>
+                  <a href="#" class="text-blue-300 text-xs xl:text-sm">read more</a>
+                </div>
+  
+                <p class="font-inter text-sm xl:text-base text-[#3E3E3E]">Get all your traffic and revenue data and combine it with GSC & GA4.</p>
+              </div>
+              <div class="pt-5 xl:pb-6 xl:pt-12 xl:px-10 xl:pb-14 rounded-md border border-[#F1F1F1]">
+                <div class="flex flex-col xl:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+                  <div class="flex items-center drop-shadow-md py-3 xl:pl-4 xl:pr-8 rounded-full">
+                    <span class="mr-5">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_420_1140)">
+                        <path d="M3 12H6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 3V6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.79998 7.80001L5.59998 5.60001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.2 7.80001L18.4 5.60001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.79998 16.2L5.59998 18.4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12L21 15L17 17L15 21L12 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_420_1140">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                      
+                    </span>
+                    <p class="font-inter font-bold text-base xl:text-2xl pt-1">PPC AFFILIATES</p>
+                  </div>
+                  <a href="#" class="text-blue-300 text-xs xl:text-sm">read more</a>
+                </div>
+  
+                <p class="font-inter text-sm xl:text-base text-[#3E3E3E]">Get click ID level tracking with dynamic variables.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rich text -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 xl:mb-10">Get connected!</h2>
+            <div class="flex flex-wrap justify-center place-items-center gap-4 xl:grid xl:gap-7 xl:grid-cols-5">
+              <div class="pt-5 px-4 pb-2 w-full rounded-md bg-[linear-gradient(180deg,#FFFFFF_0%,#F5F5F5_100%)]">
+                <p class="text-sm xl:text-md mb-4 font-bold">Supported Programs</p>
+                <div class="flex items-center gap-4">
+                  <span class="font-inter font-bold text-md xl:text-4xl">1537</span>
+                  <div class="flex">
+                    <span class="grid place-items-center">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.51721 8.13398L10.0289 3.82422C10.2781 3.56641 10.6176 3.4375 10.9914 3.4375C11.3653 3.4375 11.7004 3.56641 11.9539 3.82422L16.4828 8.13398C17.0199 8.64531 17.0199 9.47891 16.4828 9.99023C15.9457 10.5016 15.0778 10.5016 14.5406 9.99023L12.375 7.92344V17.2477C12.375 17.9738 11.7606 18.5625 11 18.5625C10.2395 18.5625 9.62502 17.9738 9.62502 17.2477V7.92344L7.4594 9.99453C6.92229 10.5059 6.05432 10.5059 5.51721 9.99453C4.9801 9.47891 4.9801 8.64961 5.51721 8.13398Z" fill="#02C30C"/>
+                      </svg>                        
+                    </span>
+                    <span class="font-inter font-medium text-base xl:text-2xl">+37</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-5 px-4 pb-2 w-full rounded-md bg-[linear-gradient(180deg,#FFFFFF_0%,#F5F5F5_100%)]">
+                <p class="text-sm xl:text-md mb-4 font-bold">Closed Programs</p>
+                <div class="flex items-center gap-4">
+                  <span class="font-inter font-bold text-md xl:text-4xl">1068</span>
+                  <div class="flex">
+                    <span class="grid place-items-center">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.51721 8.13398L10.0289 3.82422C10.2781 3.56641 10.6176 3.4375 10.9914 3.4375C11.3653 3.4375 11.7004 3.56641 11.9539 3.82422L16.4828 8.13398C17.0199 8.64531 17.0199 9.47891 16.4828 9.99023C15.9457 10.5016 15.0778 10.5016 14.5406 9.99023L12.375 7.92344V17.2477C12.375 17.9738 11.7606 18.5625 11 18.5625C10.2395 18.5625 9.62502 17.9738 9.62502 17.2477V7.92344L7.4594 9.99453C6.92229 10.5059 6.05432 10.5059 5.51721 9.99453C4.9801 9.47891 4.9801 8.64961 5.51721 8.13398Z" fill="#02C30C"/>
+                      </svg>                        
+                    </span>
+                    <span class="font-inter font-medium text-base xl:text-2xl">+24</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-5 px-4 pb-2 w-full rounded-md bg-[linear-gradient(180deg,#FFFFFF_0%,#F5F5F5_100%)]">
+                <p class="text-sm xl:text-md mb-4 font-bold">Platforms</p>
+                <div class="flex items-center gap-4">
+                  <span class="font-inter font-bold text-md xl:text-4xl">120+</span>
+                </div>
+              </div>
+              <div class="pt-5 px-4 pb-2 w-full rounded-md bg-[linear-gradient(180deg,#FFFFFF_0%,#F5F5F5_100%)]">
+                <p class="text-sm xl:text-md mb-4 font-bold">Team members</p>
+                <div class="flex items-center gap-4">
+                  <span class="font-inter font-bold text-md xl:text-4xl">13</span>
+                </div>
+              </div>
+              <a href="#" class="w-full py-8 text-center rounded-md bg-[linear-gradient(180deg,#FFFFFF_0%,#71FFC6_100%)]">
+                <p class="text-sm xl:text-md font-bold">Request Program</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- image -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <div class="max-w-7xl mx-auto grid place-items-center">
+            <img src="../pub/images/Phone-integrations-group.png">
+          </div>
+        </section>
+
+        <!-- richtext -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <p class="font-inter text-base md:text-md">How do you connect your programs? You can connect with credentials (username & password), API or CSV upload. </p>
+        </section>
+
+        <!-- 3 cols-grid -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <div class="flex flex-col lg:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+            <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 xl:mb-0">Get connected!</h2>
+            <a href="#" class="text-blue-300 text-xs xl:text-sm">see integrations</a>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8 mb-14">
+            <div class="relative w-full h-full rounded-md bg-[#2E2F5B] border border-[#F1F1F1] overflow-hidden">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-5 md:pb-10 xl:pb-20">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/looker-studio-logo.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl text-white">Looker Studio</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md text-white">Export your data into Google Looker Studio</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md bg-[#2E2F5B] border border-[#F1F1F1] overflow-hidden">
+              <img src="../pub/images/Looker-Studio.png" alt="Looker Studio" class="absolute top-0 left-0 w-full h-full ">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-5 md:pb-10 xl:pb-20">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/looker-studio-logo.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl text-white">Looker Studio</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md text-white">Export your data into Google Looker Studio</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md bg-[#2E2F5B] border border-[#F1F1F1] overflow-hidden">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-5 md:pb-10 xl:pb-20">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/looker-studio-logo.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl text-white">Looker Studio</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md text-white">Export your data into Google Looker Studio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8 mb-14">
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/bigquery.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">BigQuery</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Connect your data with BigQuery</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/aws.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">AWS</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Connect your data with Amazon Web Services</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/tableau.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">Tableau</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Visualize all of your data with Tableau data visualizations</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/looker-studio-logo-sm.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">Looker Studio</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Export your data into Google Looker Studio</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/dynamic-variables.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">Dynamic variables</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Get click ID level tracking from supported programs</p>
+              </div>
+            </div>
+            <div class="relative w-full h-full rounded-md  border border-[#F1F1F1] drop-shadow-md">
+              <div class="relative z-10 w-full h-full p-4 xl:py-6 xl:pb-12 xl:px-7">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:gap-5 pb-6 md:pb-8">
+                  <span class="grid place-items-center max-w-1/4 md:max-w-auto">
+                    <img src="../pub/images/postbacks.svg" alt="Looker Studio" class="w-full h-full object-cover">
+                  </span> 
+                  <p class="font-inter font-medium text-sm xl:text-2xl">Postbacks</p>
+                </div>
+  
+                <p class="font-inter text-xs xl:text-md">Coming soon!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 cols-grid -->
+        <section class="pt-16 pb-8 px-4 xl:px-20">
+          <div class="flex flex-col lg:flex-row xl:gap-4 justify-between xl:items-center mb-4 xl:mb-10">
+            <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 xl:mb-0">How accurate is StatsDrone?  Ask our users</h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 mb-14">
+            <div class="w-full h-full max-h-max pt-11 rounded-md border border-[#F1F1F1]">
+              <div class="grid place-items-center px-6">
+                <img src="../pub/images/find-co-logo.png" alt="Looker Studio">
+                <a href="#" class="inline-block text-center text-blue-300 pt-7 underline">find.co</a>
+              </div>
+              <p class="font-inter text-[#696969] pb-11 px-6 pt-8">StatsDrone are the most accurate stats app we have tried. When something isn’t accurate, they usually fix it same day.</p>
+              <hr class="text-[#E0E0E0]">
+              <p class="font-inter text-[#696969] p-6">The whole team are always improving the app and building features that we ask for. Highly recommended!</p>
+              <div class="text-right pb-6 px-8">
+                <a href="#" class="text-blue-400">read full review</a>
+              </div>
+            </div>
+            <div class="w-full h-full max-h-max pt-11 rounded-md border border-[#F1F1F1]">
+              <div class="grid place-items-center px-6">
+                <img src="../pub/images/blue-window-logo.png" alt="Looker Studio">
+              </div>
+              <p class="font-inter text-[#696969] pb-11 px-6 pt-8">The app is very accurate.</p>
+              <hr class="text-[#E0E0E0]">
+              <p class="font-inter text-[#696969] p-6 pb-6">We were going to not use StatsDrone but then we changed our mind because all our CTOs keep leaving our company and we would be really fucked without StatsDrone!</p>
+            </div>
+            <div class="w-full h-full max-h-max pt-11 rounded-md border border-[#F1F1F1]">
+              <div class="grid place-items-center px-6">
+                <img src="../pub/images/olika-one-logo.png" alt="Looker Studio">
+              </div>
+              <p class="font-inter text-[#696969] pb-11 px-6 pt-8">StatsDrone is the best!</p>
+              <hr class="text-[#E0E0E0]">
+              <p class="font-inter text-[#696969] p-6 pb-6">We were the first user to try the dynamic variables feature and it worked seemless and was accurate. We are very pleased with the app and the customer support.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- richtext -->
+        <div class="bg-[linear-gradient(180deg,rgba(11,4,49,1)_0%,rgba(5,2,20,1)_100%)]">
+          <section class="py-16 px-4 xl:px-20 pb-20">
+            <div class="pb-10 lg:pb-20">
+              <h2 class="font-inter font-bold text-2xl xl:text-5xl lg:mb-6 xl:mb-10 text-white">What is Revenue Leak? 🚰</h2>
+              <p class="font-inter text-white">The dark side of affiliate marketing</p>
+            </div>
+            
+            <div class="aspect-video border border-[#EB0D0D] border-8 rounded-3xl overflow-hidden">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/aylohjWgGeg?si=_8Xquku95oUsSErT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </section>
+        </div>
+
+        <!-- image with text -->
+        <section class="py-16 px-4 xl:px-20 pb-20">
+          <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 xl:mb-10">Data privacy for you</h2>
+          
+          <div class="grid gap-4 lg:gap-10 xl:gap-24 lg:grid-cols-2 place-items-center">
+            <img class="w-full h-full" src="../pub/images/privacy.png" alt="">
+            <div>
+              <p>Your <strong>data privacy</strong> is very important to us and we’ve done everything we can to protect that.</p>
+              <br>
+              <p>We cannot see your affiliate traffic and revenue data.</p>
+              <br>
+              <p>You can have your data hosted on our server, on your own server and for large enterprise clients we also have on-premises version of the app.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- richtext -->
+        <div class="bg-[linear-gradient(180deg,rgba(11,4,49,1)_0%,rgba(5,2,20,1)_100%)]">
+          <section class="pt-16 px-4 xl:px-20">
+            <div class="pb-8">
+              <a class="inline-block pb-4 lg:pb-14" href="#"><img src="../pub/images/logo-1.svg" alt=""></a>
+              <h2 class="font-inter font-bold text-2xl xl:text-5xl lg:mb-6 xl:mb-10 text-white">Features</h2>
+            </div>
+
+            <div class="grid gap-8">
+              <div class="flex gap-4 flex-wrap">
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-4 border-[#FF5656]">dynamic variables</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">deal CRM</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">invoice generator</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">campaign analysis</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">BI alerts</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">flat fees</button>
+                <button class="text-white text-md lg:text-lg px-6 py-3 rounded-full border-2 border-white">affiliate network</button>
+              </div>
+              <div>
+                <img src="../pub/images/dynamic-variable-dashboard.png" alt="">
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- richtext -->
+        <section class="py-16 px-4 xl:px-20">
+          <div class="pb-6 lg:pb-16">
+            <div class="pb-9 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+              <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 lg:mb-0">Frequently Asked Questions</h2>
+              <a href="#" class="py-3 w-full max-w-52 text-center drop-shadow-md rounded-md">help center</a>
+            </div>
+
+            <p>Quick answers to your questions. Need more help? See our <a href="#" class="underline">help files</a> or <a href="#" class="underline">contact us</a>. </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">Is there a free trial?</p>
+                <p class="font-inter text-lg">Yes there is a 14 day free trial. If you want to try the advanced features, let us know. </p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">Can I add seats?</p>
+                <p class="font-inter text-lg">Tell us how many seats you need and you can assign roles for your team.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">Something isn’t accurate, can you fix it?</p>
+                <p class="font-inter text-lg">We can always fix it, contact our support. We pride ourselves on data accuracy and having the best support.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">Can you see my data?</p>
+                <p class="font-inter text-lg">Your data is fully encrypted and we are not looking at your stats and even have a self-hosted version.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">I need a program connected, how can I add it?</p>
+                <p class="font-inter text-lg">Just ask and in some cases we can add the program in a matter of minutes. </p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D4D4D4"/>
+                <path d="M21.5001 30.6875C19.0457 30.6875 16.739 29.732 15.0039 27.9962C12.1675 25.1606 11.4936 20.8602 13.3278 17.2967C13.4938 16.9745 13.8889 16.8478 14.2118 17.0132C14.5346 17.1786 14.6613 17.5743 14.4953 17.8972C12.9229 20.9514 13.5004 24.6369 15.9318 27.0683C17.4189 28.556 19.3961 29.375 21.5001 29.375C23.6034 29.375 25.5813 28.556 27.0684 27.0683C28.5554 25.5806 29.3751 23.6033 29.3751 21.5C29.3751 19.3961 28.5561 17.4188 27.0684 15.9317C25.5806 14.4447 23.604 13.625 21.5001 13.625C19.3961 13.625 17.4189 14.4447 15.9318 15.9317C15.6752 16.1883 15.2604 16.1883 15.0039 15.9317C14.7473 15.6751 14.7473 15.2604 15.0039 15.0038C16.739 13.2687 19.0457 12.3125 21.5001 12.3125C23.9544 12.3125 26.2618 13.2687 27.9963 15.0038C29.7321 16.7389 30.6876 19.0456 30.6876 21.5C30.6876 23.9537 29.7321 26.2611 27.9963 27.9962C26.2618 29.732 23.9544 30.6875 21.5001 30.6875Z" fill="black"/>
+                <path d="M21.5001 24.1252C20.7992 24.1252 20.1397 23.8522 19.6435 23.356C18.6198 22.3323 18.6198 20.6674 19.6435 19.6443C20.4685 18.8194 24.4158 17.2562 25.1987 16.951C25.4422 16.8565 25.7171 16.9143 25.9009 17.0987C26.0846 17.2831 26.143 17.5581 26.0485 17.8009C25.7434 18.5838 24.1802 22.5318 23.3553 23.356C22.8605 23.8522 22.201 24.1252 21.5001 24.1252ZM24.2485 18.7524C22.6387 19.4271 20.9252 20.2192 20.5721 20.5722C20.0603 21.0841 20.0603 21.9162 20.5721 22.4281C21.0683 22.9242 21.9325 22.9242 22.4287 22.4281C22.7811 22.0744 23.5738 20.3622 24.2485 18.7524Z" fill="black"/>
+              </svg>
+              
+              <div>
+                <p class="font-inter text-lg font-bold pb-5 pt-1">Can I export my data?</p>
+                <p class="font-inter text-lg">You can use our API to export everything: accounts, brands, campaigns, postbacks and dynamic variables. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 cols grid -->
+        <section class="py-16 pb-36 px-4 xl:px-20">
+          <div class="pb-6 lg:pb-16">
+            <h2 class="font-inter font-bold text-2xl xl:text-5xl mb-6 lg:mb-0">Your Award Winning Affiliate Tools</h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 mb-14">
+            <div class="rounded-md px-6 pt-8 pb-6 border border-[#F1F1F1] drop-shadow-md">
+              <p class="font-inter font-medium text-2xl pb-4 lg:pb-8">iGB Affiliate 2024</p>
+              <p class="font-inter text-lg pb-3 lg:pb-8">Best Tech for Affiliates</p>
+              <img class="rounded-lg w-full" src="../pub/images/award-1.png" alt="">
+            </div>
+            <div class="rounded-md px-6 pt-8 pb-6 border border-[#F1F1F1] drop-shadow-md">
+              <p class="font-inter font-medium text-2xl pb-4 lg:pb-8">AffPapa Awards 2024</p>
+              <p class="font-inter text-lg pb-3 lg:pb-8">Affiliate Intelligence of the Year</p>
+              <img class="rounded-lg w-full" src="../pub/images/award-2.png" alt="">
+            </div>
+            <div class="rounded-md px-6 pt-8 pb-6 border border-[#F1F1F1] drop-shadow-md">
+              <div class="pb-4 lg:pb-8 flex gap-4 lg:gap-6">
+                <span>
+                  <img src="../pub/images/tableau.svg">
+                </span>
+                <p class="font-inter font-medium text-2xl">Odys Awards 2025</p>
+              </div>
+              <p class="font-inter text-lg pb-3 lg:pb-8">Best Tech for Affiliates</p>
+              <img class="rounded-lg w-full" src="../pub/images/award-3.png" alt="">
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="py-16 pb-16 px-4 xl:px-20 text-white bg-[#040722]">
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-20 pb-20">
+          <!-- footer logo -->
+          <div>
+            <div class="pb-8">
+              <a class="inline-block pb-[33px]" href="#"><img src="../pub/images/logo-1.svg" alt=""></a>
+              <p class="font-inter text-lg">4035 Rue St Ambroise Suite 216 <br> Montreal, Quebec <br> H4C 2E1</p>
+              <br>
+              <p class="font-inter text-lg">+1 (438) 802-3955</p>
+            </div>
+  
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#"><img src="../pub/images/social-ico-4.png" alt=""></a>
+              <a href="#"><img src="../pub/images/social-ico-5.png" alt=""></a>
+              <a href="#"><img src="../pub/images/social-ico-2.png" alt=""></a>
+              <a href="#"><img src="../pub/images/social-ico-1.png" alt=""></a>
+              <a href="#"><img src="../pub/images/social-ico-3.png" alt=""></a>
+            </div>
+          </div>
+  
+          <!-- menus -->
+          <div class="flex flex-col lg:flex-row lg:flex-wrap gap-10 lg:gap-12">
+            <div class="lg:max-w-[150px]">
+              <span class="inline-block font-inter font-medium text-lg pb-5">Header 1</span>
+              <ul class="flex flex-col gap-4">
+                <li><a href="#" class="hover:underline">casino affiliates</a></li>
+                <li><a href="#" class="hover:underline">bingo affiliates</a></li>
+                <li><a href="#" class="hover:underline">poker affiliates</a></li>
+                <li><a href="#" class="hover:underline">sports betting affiliates</a></li>
+                <li><a href="#" class="hover:underline">affiliate networks</a></li>
+              </ul>
+            </div>
+            <div class="lg:max-w-[150px]">
+              <span class="inline-block font-inter font-medium text-lg pb-5">Header 2</span>
+              <ul class="flex flex-col gap-4">
+                <li><a href="#" class="hover:underline">API</a></li>
+                <li><a href="#" class="hover:underline">Dynamic variables</a></li>
+                <li><a href="#" class="hover:underline">Postbacks</a></li>
+              </ul>
+            </div>
+            <div class="lg:max-w-[150px]">
+              <span class="inline-block font-inter font-medium text-lg pb-5">Header 3</span>
+              <ul class="flex flex-col gap-4">
+                <li><a href="#" class="hover:underline">About us</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-4 pb-20">
+          <img src="../pub/images/footer-logo-1.png" alt="">
+          <img src="../pub/images/footer-logo-2.png" alt="">
+        </div>
+
+        <p>Copyright StatsDrone 2025 </p>
+      </footer>
+    </div>
+  </body>
+</html>

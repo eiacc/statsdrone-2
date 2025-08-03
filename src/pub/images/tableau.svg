@@ -1,0 +1,31 @@
+<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_354_964)">
+<rect x="4" width="44" height="44" rx="6" fill="white"/>
+</g>
+<g clip-path="url(#clip0_354_964)">
+<path d="M24.9753 7.81671V9.31725H22.2914V10.2932H24.9753V13.2821H26.0244V10.2932H28.7754V9.31725H26.0244V6.32227H24.9753V7.81671Z" fill="#7099A6"/>
+<path d="M16.2038 11.6229V13.8005H12.1414V15.1669H16.2038V19.5892H17.7104V15.1669H21.8339V13.8005H17.7104V9.44531H16.2038V11.6229Z" fill="#EB912C"/>
+<path d="M33.2282 11.6229V13.8005H29.1658V15.234H33.2282V19.5892H34.7959V15.234H38.8583V13.8005H34.7959V9.44531H33.2282V11.6229Z" fill="#59879B"/>
+<path d="M24.5849 19.0402V21.4802H20.0649V23.2979H24.5849V28.1777H26.4148V23.2979H30.9347V21.4802H26.4148V16.6003H24.5849V19.0402Z" fill="#E8762C"/>
+<path d="M37.8762 20.2725V21.8035H35.1252V23.0418H37.8762V26.0978H39.2487V23.0418H41.9997V21.8035H39.2487V18.7476H37.8762V20.2725Z" fill="#5B6591"/>
+<path d="M11.6839 20.4066V21.8705H9V22.9075H11.6839V25.8354H12.7331V22.9075L15.484 22.8099V21.8705H12.7331V18.9426H11.6839V20.4066Z" fill="#7099A6"/>
+<path d="M16.2038 27.2994V29.4771H12.1414V30.9105H16.2038V35.2657H17.7714V30.9105H21.8339V29.4771H17.7714V25.1218H16.2038V27.2994Z" fill="#C72035"/>
+<path d="M33.2282 27.2994V29.4771H29.1658V30.8434H33.2282V35.2657H34.7959V30.8434H38.8583V29.4771H34.7959V25.1218H33.2282V27.2994Z" fill="#1F447E"/>
+<path d="M24.8472 32.8318V34.3568H22.0962V35.595H24.8472V38.651H26.2196V35.595H28.9706V34.3568H26.2196V31.3008H24.8472V32.8318Z" fill="#5B6591"/>
+</g>
+<defs>
+<filter id="filter0_d_354_964" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_964"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_964" result="shape"/>
+</filter>
+<clipPath id="clip0_354_964">
+<rect width="33" height="33" fill="white" transform="translate(9 6)"/>
+</clipPath>
+</defs>
+</svg>
