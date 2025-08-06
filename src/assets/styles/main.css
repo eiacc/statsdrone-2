@@ -1,9 +1,43 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 360px;
+}
+
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
 }
 
 .font-inter {
   font-family: "Inter", sans-serif;
+}
+
+.font-ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+#health-nav,
+.scrollable::-webkit-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#health-nav::-webkit-scrollbar,
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+#health-nav::after {
+  content: "";
+  height: 3px;
+  width: 5.9rem;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: black;
 }

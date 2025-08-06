@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StatsDrone</title>
+    <link href="../styles.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col bg-[#F6F6F6]">
+    <header class="bg-[#362F8A] p-[1.40rem] flex">
+      <div
+        class="xs:w-full md:w-[50%] lg:w-[30%] flex justify-between items-center"
+      >
+        <img src="../pub/images/logo.png" alt="Statsdrone logo" />
+        <a href="/" class="flex items-center gap-2.5">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20C7.34784 20 4.8043 18.9464 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0C12.6522 0 15.1957 1.05357 17.0711 2.92893C18.9464 4.8043 20 7.34784 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20ZM4.4 15.71C6.05114 14.5857 8.00245 13.9845 10 13.9845C11.9976 13.9845 13.9489 14.5857 15.6 15.71C16.7348 14.5977 17.5127 13.1725 17.8344 11.6164C18.156 10.0602 18.007 8.44351 17.4063 6.97239C16.8055 5.50126 15.7802 4.24237 14.4612 3.35623C13.1421 2.4701 11.5891 1.99686 10 1.99686C8.41094 1.99686 6.85787 2.4701 5.53882 3.35623C4.21977 4.24237 3.19451 5.50126 2.59375 6.97239C1.99299 8.44351 1.84395 10.0602 2.16564 11.6164C2.48734 13.1725 3.26518 14.5977 4.4 15.71ZM10.52 8.07L13.54 5.05L14.95 6.46L11.93 9.48C12.0448 9.90535 12.0159 10.3567 11.8478 10.7639C11.6797 11.1712 11.3819 11.5115 11.0005 11.7321C10.6192 11.9528 10.1757 12.0413 9.73884 11.984C9.30202 11.9266 8.89635 11.7267 8.58483 11.4152C8.2733 11.1036 8.07336 10.698 8.01604 10.2612C7.95872 9.82434 8.04724 9.38082 8.26785 8.99947C8.48846 8.61812 8.82881 8.32028 9.23606 8.15221C9.6433 7.98414 10.0946 7.95524 10.52 8.07Z"
+              fill="white"
+            />
+          </svg>
+
+          <span
+            class="font-ibm-plex-sans font-medium xs:text-base md:text-[1.125rem] text-white"
+            >Dashboard</span
+          >
+        </a>
+      </div>
+    </header>
+    <main
+      class="flex flex-col gap-10 xs:px-4 md:px-[3rem] lg:px-[5rem] xs:pb-[10rem] lg:pb-[20rem] pt-[5rem]"
+    >
+      <div class="flex flex-col w-full xs:gap-4 md:gap-6 overflow-hidden">
+        <h1
+          class="montserrat font-semibold xs:text-[1.50rem] md:text-[1.80rem] text-[2.25rem] w-fit"
+        >
+          Bonuses
+        </h1>
+        <div class="scrollable w-full overflow-auto">
+          <table class="w-[100rem]">
+            <thead class="border-b border-[#E1E1E1]">
+              <tr>
+                <th
+                  class="montserrat text-[1.125rem] font-medium py-4 text-left"
+                >
+                  Bonus name
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Brand
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Code
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Type
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Affiliate program
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Software
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Start date
+                </th>
+                <th
+                  class="montserrat text-[1.125rem] font-medium p-4 text-left"
+                >
+                  Expiry
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="montserrat text-[1.125rem] p-4">20 free spins</td>
+                <td class="montserrat text-[1.125rem] p-4">LeoVegas</td>
+                <td class="montserrat text-[1.125rem] text-end p-4"></td>
+                <td class="montserrat text-[1.125rem] text-left p-4">
+                  free spins
+                </td>
+                <td class="montserrat text-[1.125rem] text-left p-4">
+                  LeoVegas Affiliates
+                </td>
+                <td class="montserrat text-[1.125rem] text-left p-4">
+                  NetRefer
+                </td>
+                <td class="montserrat text-[1.125rem] text-left p-4">
+                  2024-01-01 00:00:00
+                </td>
+                <td class="text-[1.125rem] p-4 flex justify-between">
+                  <span class="montserrat"> 2025-02-28 00:00:00 </span>
+                  <div class="flex gap-3.5">
+                    <a
+                      href="/"
+                      class="montserrat text-[1.125rem] text-[#0A58CA]"
+                      >T&Cs</a
+                    >
+                    <a
+                      href="/"
+                      class="montserrat text-[1.125rem] text-[#0A58CA]"
+                      >URL</a
+                    >
+                    <button>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0 14.2V18H3.8L14.8 6.9L11 3.1L0 14.2ZM17.7 4C18.1 3.6 18.1 3 17.7 2.6L15.4 0.3C15 -0.1 14.4 -0.1 14 0.3L12.2 2.1L16 5.9L17.7 4Z"
+                          fill="#0A58CA"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="font-ibm-plex-sans text-[1.125rem] p-4">
+                  20 free spins CAD players on...
+                </td>
+                <td class="font-ibm-plex-sans text-[1.125rem] p-4">BitStarz</td>
+                <td
+                  class="font-ibm-plex-sans text-[1.125rem] text-end p-4 uppercase"
+                >
+                  Bonus20
+                </td>
+                <td class="font-ibm-plex-sans text-[1.125rem] text-left p-4">
+                  free spins
+                </td>
+                <td class="font-ibm-plex-sans text-[1.125rem] text-left p-4">
+                  BitStarz Affiliates
+                </td>
+                <td class="font-ibm-plex-sans text-[1.125rem] text-left p-4">
+                  Affilka
+                </td>
+                <td class="font-ibm-plex-sans text-[1.125rem] text-left p-4">
+                  2024-01-01 00:00:00
+                </td>
+                <td class="text-[1.125rem] p-4 flex justify-between">
+                  <span class="font-ibm-plex-sans">2025-12-31 23:59:59</span>
+                  <div class="flex gap-3.5">
+                    <a
+                      href="/"
+                      class="font-ibm-plex-sans text-[1.125rem] text-[#0A58CA]"
+                      >T&Cs</a
+                    >
+                    <a
+                      href="/"
+                      class="font-ibm-plex-sans text-[1.125rem] text-[#0A58CA]"
+                      >URL</a
+                    >
+                    <button>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0 14.2V18H3.8L14.8 6.9L11 3.1L0 14.2ZM17.7 4C18.1 3.6 18.1 3 17.7 2.6L15.4 0.3C15 -0.1 14.4 -0.1 14 0.3L12.2 2.1L16 5.9L17.7 4Z"
+                          fill="#0A58CA"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="flex flex-col border border-[#C7C7C7] h-fit w-fit rounded-lg">
+        <div
+          class="flex justify-center p-4 bg-[#f4f4f4] rounded-tl-lg rounded-tr-lg"
+        >
+          <h2 class="montserrat font-semibold">
+            20 free spins CAD players only in ...
+          </h2>
+        </div>
+        <div class="flex flex-col p-4">
+          <div class="flex flex-col gap-3">
+            <h3 class="montserrat font-semibold text-[#0A58CA]">LeoVegas</h3>
+            <p class="montserrat">
+              Code: <span class="uppercase">Bonus20</span>
+            </p>
+            <p class="montserrat">Type: <span>free spins</span></p>
+          </div>
+          <div class="mt-6">
+            <h4 class="montserrat text-[#8F8F8F]">Start</h4>
+            <p class="montserrat">2024-01-01 00:00:00</p>
+          </div>
+          <div class="mt-1.5">
+            <h4 class="montserrat text-[#8F8F8F]">End</h4>
+            <p class="montserrat">2025-01-01 00:00:00</p>
+          </div>
+          <div class="flex gap-3.5 self-end mt-4">
+            <a href="/" class="font-ibm-plex-sans text-[1.125rem] text-[#0A58CA]"
+              >T&Cs</a
+            >
+            <a href="/" class="font-ibm-plex-sans text-[1.125rem] text-[#0A58CA]"
+              >URL</a
+            >
+            <button>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 14.2V18H3.8L14.8 6.9L11 3.1L0 14.2ZM17.7 4C18.1 3.6 18.1 3 17.7 2.6L15.4 0.3C15 -0.1 14.4 -0.1 14 0.3L12.2 2.1L16 5.9L17.7 4Z"
+                  fill="#0A58CA"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
