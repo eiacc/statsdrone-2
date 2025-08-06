@@ -16,10 +16,6 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
 #health-nav,
 .scrollable::-webkit-scrollbar {
   overflow-x: auto;
