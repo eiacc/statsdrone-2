@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
-@theme {
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-ibm: "IBM Plex Sans", sans-serif;
-  --font-inter: "Inter", sans-serif; 
+
+@layer base {
+  h1{
+    @apply text-5xl font-bold;
+    font-family: 'Inter';
+  }
+    p{
+      @apply text-2xl text-black leading-[38px];
+      font-family: 'Inter';
+      font-weight: 400;
+    }
 }
-
-
 
 @layer components {
   .xl-container {
